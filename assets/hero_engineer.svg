@@ -1,0 +1,107 @@
+<svg viewBox="0 0 1200 380" width="1200" height="380" xmlns="http://www.w3.org/2000/svg">
+  <!--
+    Flat-cartoon header image: an engineer seen from behind, at a desk with two monitors.
+
+    GEOMETRY (viewBox units, canvas 1200 x 380, canvas centre x = 600)
+      left  monitor bezel : x  200-580   y  42-262    screen inset 12 -> 212-568 / 54-250
+      right monitor bezel : x  620-1000  y  42-262    screen inset 12 -> 632-988 / 54-250
+      monitor gap         : 580-620  (40 wide, centred on 600)
+      stand necks         : 376-404 / 796-824,  y 262-290
+      stand bases         : 335-445 / 755-865,  y 290-300  (bottom = desk top edge)
+      desk top plane      : x  60-1140   y 300-344
+      desk apron          : x  72-1128   y 344-358   (12 inset each side)
+      keyboard            : x 478-722    y 320-338
+      chair back          : x 430-770    y 336-380
+      torso               : x 456-744    shoulder crest y 343, bottom y 380
+      head circle         : centre (600,276) r 56 -> x 544-656  y 220-332
+      headphone band      : exact semicircle r 61 about (600,276) -> top y 215
+    Every element stays inside 0-1200 x 0-380.
+  -->
+
+  <!-- ============ background ============ -->
+  <rect x="0" y="0" width="1200" height="380" rx="16" fill="#eef2f7"/>
+  <!-- soft halo behind the workstation: x 430-770, y 10-350 -->
+  <circle cx="600" cy="180" r="170" fill="#e4eaf3"/>
+
+  <!-- ============ left monitor: the code editor ============ -->
+  <rect x="200" y="42" width="380" height="220" rx="14" fill="#334155"/>
+  <rect x="212" y="54" width="356" height="196" rx="8" fill="#0f172a"/>
+  <rect x="212" y="54" width="356" height="20" rx="8" fill="#1e293b"/>
+  <circle cx="226" cy="64" r="3.5" fill="#f87171"/>
+  <circle cx="240" cy="64" r="3.5" fill="#fbbf24"/>
+  <circle cx="254" cy="64" r="3.5" fill="#4ade80"/>
+  <!-- code lines: x from 228 (16 in from the screen edge), longest right edge 450 (screen ends 568) -->
+  <rect x="228" y="88"  width="170" height="7" rx="3.5" fill="#38bdf8"/>
+  <rect x="240" y="106" width="120" height="7" rx="3.5" fill="#a3e635"/>
+  <rect x="240" y="124" width="210" height="7" rx="3.5" fill="#94a3b8"/>
+  <rect x="252" y="142" width="150" height="7" rx="3.5" fill="#fbbf24"/>
+  <rect x="252" y="160" width="186" height="7" rx="3.5" fill="#94a3b8"/>
+  <rect x="240" y="178" width="96"  height="7" rx="3.5" fill="#f472b6"/>
+  <rect x="228" y="196" width="160" height="7" rx="3.5" fill="#38bdf8"/>
+  <rect x="228" y="214" width="140" height="7" rx="3.5" fill="#475569"/>
+
+  <!-- ============ right monitor: the metrics dashboard ============ -->
+  <rect x="620" y="42" width="380" height="220" rx="14" fill="#334155"/>
+  <rect x="632" y="54" width="356" height="196" rx="8" fill="#0f172a"/>
+  <rect x="632" y="54" width="356" height="20" rx="8" fill="#1e293b"/>
+  <circle cx="646" cy="64" r="3.5" fill="#f87171"/>
+  <circle cx="660" cy="64" r="3.5" fill="#fbbf24"/>
+  <circle cx="674" cy="64" r="3.5" fill="#4ade80"/>
+  <!-- bars: 26 wide on a baseline of y 210; tallest top y 106 clears the title bar at y 74 -->
+  <rect x="660" y="156" width="26" height="54"  rx="4" fill="#38bdf8"/>
+  <rect x="700" y="124" width="26" height="86"  rx="4" fill="#38bdf8"/>
+  <rect x="740" y="142" width="26" height="68"  rx="4" fill="#a3e635"/>
+  <rect x="780" y="106" width="26" height="104" rx="4" fill="#a3e635"/>
+  <rect x="820" y="162" width="26" height="48"  rx="4" fill="#fbbf24"/>
+  <rect x="860" y="118" width="26" height="92"  rx="4" fill="#38bdf8"/>
+  <rect x="652" y="210" width="280" height="2" fill="#475569"/>
+  <rect x="652" y="222" width="90" height="6" rx="3" fill="#475569"/>
+  <rect x="652" y="234" width="60" height="6" rx="3" fill="#475569"/>
+
+  <!-- ============ monitor stands ============ -->
+  <rect x="376" y="262" width="28" height="28" fill="#334155"/>
+  <rect x="335" y="290" width="110" height="10" rx="5" fill="#334155"/>
+  <rect x="796" y="262" width="28" height="28" fill="#334155"/>
+  <rect x="755" y="290" width="110" height="10" rx="5" fill="#334155"/>
+
+  <!-- ============ desk ============ -->
+  <rect x="60" y="300" width="1080" height="44" rx="6" fill="#d8c3a2"/>
+  <rect x="72" y="344" width="1056" height="14" rx="4" fill="#bfa781"/>
+
+  <!-- ============ desk props ============ -->
+  <!-- mug: cup 266-304, y 268-300 (sits on the desk top edge); handle bulges right to x ~311, clear of the stand base at 335 -->
+  <path d="M 304 278 A 9 9 0 0 1 304 294" fill="none" stroke="#ef4444" stroke-width="4"/>
+  <rect x="266" y="268" width="38" height="32" rx="5" fill="#ef4444"/>
+  <rect x="266" y="268" width="38" height="6" rx="3" fill="#fca5a5"/>
+
+  <!-- plant: pot 1036-1084 y 270-300; foliage x 1026-1095, y 218-270 (clear of the monitor at x 1000) -->
+  <circle cx="1042" cy="254" r="16" fill="#22c55e"/>
+  <circle cx="1080" cy="252" r="15" fill="#22c55e"/>
+  <circle cx="1061" cy="236" r="18" fill="#16a34a"/>
+  <rect x="1036" y="270" width="48" height="30" rx="5" fill="#ea7317"/>
+
+  <!-- keyboard and mouse, on the desk plane (y 300-344) -->
+  <rect x="478" y="320" width="244" height="18" rx="5" fill="#475569"/>
+  <ellipse cx="790" cy="329" rx="14" ry="10" fill="#475569"/>
+
+  <!-- ============ the engineer, seen from behind ============ -->
+  <!-- chair back: 430-770, y 336-380, rounded top corners only -->
+  <path d="M 430 380 V 356 Q 430 336 450 336 H 750 Q 770 336 770 356 V 380 Z" fill="#64748b"/>
+  <!-- neck 578-622, y 304-346: hidden above by the head (bottom y 332), below by the shoulders (crest y 343) -->
+  <rect x="578" y="304" width="44" height="42" rx="9" fill="#d9a06b"/>
+  <!-- torso, symmetric about x = 600: 456<->744, 458<->742, 492<->708, 524<->676, 556<->644 -->
+  <path d="M 456 380 L 456 372 C 458 356 492 350 524 346 C 556 342 644 342 676 346 C 708 350 742 356 744 372 L 744 380 Z" fill="#2563eb"/>
+  <!-- forearms reaching up onto the keyboard, hands resting on it -->
+  <path d="M 502 352 L 524 330" stroke="#2563eb" stroke-width="21" stroke-linecap="round"/>
+  <path d="M 698 352 L 676 330" stroke="#2563eb" stroke-width="21" stroke-linecap="round"/>
+  <circle cx="524" cy="326" r="12" fill="#d9a06b"/>
+  <circle cx="676" cy="326" r="12" fill="#d9a06b"/>
+  <!-- back of the head (hair only, no face) -->
+  <circle cx="600" cy="276" r="56" fill="#3f3f46"/>
+  <!-- hair highlight: arc of r 46 whose centre resolves to (600, 276.3) -> top y 230, safely inside the head -->
+  <path d="M 563 249 A 46 46 0 0 1 637 249" fill="none" stroke="#52525b" stroke-width="8" stroke-linecap="round"/>
+  <!-- headphones: chord 539->661 is 122 = 2 x 61, so the band is an exact semicircle about the head centre -->
+  <path d="M 539 276 A 61 61 0 0 1 661 276" fill="none" stroke="#1f2937" stroke-width="9"/>
+  <circle cx="539" cy="276" r="12" fill="#1f2937"/>
+  <circle cx="661" cy="276" r="12" fill="#1f2937"/>
+</svg>

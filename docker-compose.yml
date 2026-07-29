@@ -1,0 +1,42 @@
+services:
+  app:
+    build: .
+    ports:
+      - "8501:8501"
+    env_file:
+      # Non-secret provider choice only (LLM_PROVIDER=local|deepseek|openai
+      # and any model/URL overrides). See .env.example.
+      - .env
+    environment:
+      # Containers don't have a GPU/llama.cpp server of their own, so default
+      # to a cloud provider here rather than "local" (rag.py's own default,
+      # which only makes sense when running bare with `uv run streamlit run
+      # app.py` on a machine that also has llama.cpp running). Set
+      # LLM_PROVIDER explicitly in .env to override — this still respects
+      # that if you really do want LLM_PROVIDER=local in Docker (see
+      # DockerDeployment.md §4).
+      - LLM_PROVIDER=${LLM_PROVIDER:-deepseek}
+      # Real secret VALUES are never put in .env or this file — they're
+      # read from the host shell's own environment at `docker compose up`
+      # time. If DEEPSEEK_API_KEY/OPENAI_API_KEY aren't set on the host,
+      # these simply resolve to empty and the app warns at runtime rather
+      # than failing to start.
+      - DEEPSEEK_API_KEY=${DEEPSEEK_API_KEY:-}
+      - OPENAI_API_KEY=${OPENAI_API_KEY:-}
+      # Local llama.cpp/embedding servers run on the HOST, not in this
+      # compose file — point the container at them via the Docker-provided
+      # host alias. Only relevant when LLM_PROVIDER=local. Deliberately a
+      # distinct env var from LLM_BASE_URL (which rag.py treats as a
+      # highest-priority manual override for ALL providers) so this default
+      # never accidentally overrides LLM_PROVIDER=deepseek/openai.
+      - LOCAL_LLM_BASE_URL=${LOCAL_LLM_BASE_URL:-http://host.docker.internal:11434/v1}
+      - EMBED_BASE_URL=${EMBED_BASE_URL:-http://host.docker.internal:11435/v1}
+    extra_hosts:
+      # Lets host.docker.internal resolve on Linux hosts too (Docker Desktop
+      # on Windows/Mac already provides it).
+      - "host.docker.internal:host-gateway"
+    volumes:
+      # DuckDB knowledge-base + trace/feedback stores persist across
+      # container restarts instead of resetting every run.
+      - ./data:/app/data
+    restart: unless-stopped

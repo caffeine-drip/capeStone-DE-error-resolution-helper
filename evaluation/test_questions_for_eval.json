@@ -1,0 +1,689 @@
+[
+  {
+    "question": "How do I reduce excessive logging verbosity in Spark to fix I/O saturation and meet my 1-hour ETL SLA?",
+    "doc_id": "pdf-performance-latency-14-d200df",
+    "doc_title": "Slow ETL Due to Excessive",
+    "component": "spark"
+  },
+  {
+    "question": "How do I right-size Spark executor resources from 4 cores/8GB to 2 cores/4GB to fix underutilized cluster and high cloud costs?",
+    "doc_id": "config-over-provisioned-executors-idle-cluster-2-844cd3",
+    "doc_title": "Underutilized Cluster Due to Oversized Executors",
+    "component": "spark"
+  },
+  {
+    "question": "How do I resolve Spark shuffle performance degradation in a 500 GB job by increasing shuffle partitions to eliminate straggler tasks?",
+    "doc_id": "pdf-performance-latency-3-e55d2d",
+    "doc_title": "Spark Shuffle Becomes a",
+    "component": "spark"
+  },
+  {
+    "question": "How do I fix Kafka pipeline outages caused by an incompatible Avro schema change in the Schema Registry?",
+    "doc_id": "pdf-schema-evolution-3-922ccf",
+    "doc_title": "Incompatible Kafka Schema",
+    "component": "kafka"
+  },
+  {
+    "question": "How do I fix the OOM error on my Spark broadcast join for a 4GB table with 8 executor cores?",
+    "doc_id": "config-slow-broadcast-join-large-table-1-c8b40d",
+    "doc_title": "Broadcast Join Fails with OOM on Large Broadcast Table",
+    "component": "spark"
+  },
+  {
+    "question": "How do I add semantic validation rules to detect upstream miscalculations when technical checks pass but business meaning is wrong?",
+    "doc_id": "pdf-data-quality-15-6ecfd0",
+    "doc_title": "ETL Job Passes Validation but",
+    "component": "data-quality"
+  },
+  {
+    "question": "How do I temporarily scale my Spark cluster to meet SLAs during predictable holiday traffic spikes?",
+    "doc_id": "pdf-data-pipeline-failures-13-15968f",
+    "doc_title": "Pipeline Failure During Holiday /",
+    "component": "spark"
+  },
+  {
+    "question": "How do I fix excessive Spark checkpoint time in a 40-stage pipeline by configuring spark.checkpoint.dir and shuffle partitions?",
+    "doc_id": "config-checkpoint-overhead-long-lineage-1-7bbeab",
+    "doc_title": "Checkpoint Overhead in Long-Lineage DAG",
+    "component": "spark"
+  },
+  {
+    "question": "Why did my Spark job runtime double after refactoring due to inefficient transformations and increased shuffle overhead?",
+    "doc_id": "pdf-performance-latency-13-e8f2f7",
+    "doc_title": "Slow Job After Code Refactor",
+    "component": "spark"
+  },
+  {
+    "question": "How do I fix negative revenue values in my daily sales ETL pipeline caused by incorrect upstream calculation logic?",
+    "doc_id": "pdf-data-quality-5-41c378",
+    "doc_title": "Out-of-Range Values in",
+    "component": "data-quality"
+  },
+  {
+    "question": "How do I stop frequent Kafka consumer group rebalances caused by misconfigured heartbeat intervals and session timeouts?",
+    "doc_id": "pdf-streaming-kafka-2-751969",
+    "doc_title": "Kafka Rebalancing Storms",
+    "component": "kafka"
+  },
+  {
+    "question": "How do I fix NameNode pressure from 2 million small files in my Spark ETL job by tuning partitions and write batch size?",
+    "doc_id": "config-small-files-problem-many-output-files-1-f695cf",
+    "doc_title": "Excessive Small Files Causing NameNode Pressure and Slow Writes",
+    "component": "spark"
+  },
+  {
+    "question": "How do I update ETL logic to handle a new non-optional upstream field missing in historical data while maintaining backward compatibility?",
+    "doc_id": "pdf-schema-evolution-1-053e09",
+    "doc_title": "Adding a Non-Optional Field to",
+    "component": "schema"
+  },
+  {
+    "question": "How do I fix the Spark 'OutOfMemoryError' and 'ShuffleHandshakeException' caused by excessive shuffle partitions on a 50GB dataset?",
+    "doc_id": "config-excessive-caching-memory-pressure-2-1ad69d",
+    "doc_title": "Shuffle Spill and OOM due to High Partition Count",
+    "component": "spark"
+  },
+  {
+    "question": "How do I resolve a sudden Redshift performance regression on a critical query without changing the schema?",
+    "doc_id": "pdf-performance-latency-2-c21b58",
+    "doc_title": "SQL Queries Running Slower",
+    "component": "redshift"
+  },
+  {
+    "question": "How do I resolve network throttling on an S3 Spark ETL job where runtime doubled due to insufficient read parallelism?",
+    "doc_id": "pdf-performance-latency-7-4993e7",
+    "doc_title": "Network Latency Causes Job",
+    "component": "spark"
+  },
+  {
+    "question": "How do I implement a schema translation adapter layer to handle schema evolution during a historical backfill without altering the production schema?",
+    "doc_id": "pdf-backfills-reprocessing-4-d14dfb",
+    "doc_title": "Schema Mismatch During",
+    "component": "schema"
+  },
+  {
+    "question": "Why did my Airflow DAG mark as successful while skipping critical downstream tasks due to overly strict default trigger rules?",
+    "doc_id": "pdf-orchestration-scheduling-6-9e0d43",
+    "doc_title": "DAG Completes Successfully",
+    "component": "airflow"
+  },
+  {
+    "question": "How do I stop pipeline failures caused by uncoordinated schema changes from multiple teams?",
+    "doc_id": "pdf-schema-evolution-6-8504ef",
+    "doc_title": "Multiple Teams Modifying the",
+    "component": "schema"
+  },
+  {
+    "question": "Why did my Spark ETL job load incorrect data despite completing successfully due to a stale source table configuration?",
+    "doc_id": "pdf-data-quality-14-5f96b8",
+    "doc_title": "ETL Job Loads Data from the",
+    "component": "spark"
+  },
+  {
+    "question": "Why are my AWS Lambda costs spiking due to excessive invocations from redundant event triggers and schedule events?",
+    "doc_id": "pdf-cloud-cost-resources-4-82f2f3",
+    "doc_title": "Cloud Functions Trigger",
+    "component": "aws-emr"
+  },
+  {
+    "question": "How do I prevent historical Airflow DAG backfills from saturating the worker pool and breaching the 1-hour SLA for production jobs?",
+    "doc_id": "pdf-orchestration-scheduling-10-0a7ce8",
+    "doc_title": "DAG Backfill Saturates Workers",
+    "component": "airflow"
+  },
+  {
+    "question": "How to add audit logging and retroactive documentation to a business-critical pipeline without downtime?",
+    "doc_id": "pdf-security-access-4-31d0c7",
+    "doc_title": "Business-Critical Pipeline Fails",
+    "component": "general"
+  },
+  {
+    "question": "How do I fix YARN OutOfMemory errors on Spark by adjusting executor memory and cores?",
+    "doc_id": "config-executor-loss-yarn-container-killed-2-094215",
+    "doc_title": "OOM Kill Due to Oversubscribed Executor Cores",
+    "component": "spark"
+  },
+  {
+    "question": "How do I restore a backfill job that overwrote recent data without a backup?",
+    "doc_id": "pdf-backfills-reprocessing-3-51e14b",
+    "doc_title": "Backfill Overwrites Correct",
+    "component": "backfill"
+  },
+  {
+    "question": "How do I optimize Spark executor configuration to reduce cloud costs on a shared cluster without breaking the 2-hour SLA?",
+    "doc_id": "pdf-cloud-cost-resources-6-a8ab33",
+    "doc_title": "Inefficient Spark Jobs Consume",
+    "component": "spark"
+  },
+  {
+    "question": "Why are my independent Airflow tasks queuing and missing the 1-hour SLA?",
+    "doc_id": "pdf-performance-latency-11-1f2822",
+    "doc_title": "DAG Task Queueing Causes",
+    "component": "airflow"
+  },
+  {
+    "question": "How do I fix inflated record counts in a Spark ETL join caused by incorrect join keys and missing predicates?",
+    "doc_id": "pdf-data-quality-2-c318b0",
+    "doc_title": "Duplicate Records Introduced",
+    "component": "spark"
+  },
+  {
+    "question": "How do I resolve conflicting revenue metrics between Sales and Marketing dashboards caused by misaligned metric definitions?",
+    "doc_id": "pdf-stakeholder-process-3-f3e40f",
+    "doc_title": "Conflicting Revenue Metrics",
+    "component": "data-quality"
+  },
+  {
+    "question": "How do I enforce schema versioning to prevent downstream consumers from failing on incompatible upstream schema changes?",
+    "doc_id": "pdf-schema-evolution-9-f3a675",
+    "doc_title": "Schema Versioning Not",
+    "component": "schema"
+  },
+  {
+    "question": "How do I audit and fix a silent ETL failure where revenue KPIs deviate 20% due to incorrect transformation logic?",
+    "doc_id": "pdf-data-quality-9-11c3b0",
+    "doc_title": "ETL Job Succeeds but Business",
+    "component": "data-quality"
+  },
+  {
+    "question": "How do I resolve intermittent ExecutorOutOfMemoryError during Spark shuffle aggregation by tuning memory and partitions?",
+    "doc_id": "config-executor-oom-high-shuffle-1-57c884",
+    "doc_title": "Out-of-Memory on Executors During Large Shuffle",
+    "component": "spark"
+  },
+  {
+    "question": "How do I fix a Spark Driver OutOfMemoryError when collecting a 50GB dataset with a 2g heap?",
+    "doc_id": "config-driver-oom-collect-heavy-2-c1204c",
+    "doc_title": "Driver OOM due to Massive Dataset Collection",
+    "component": "spark"
+  },
+  {
+    "question": "How do I implement robust alerting for silent Kafka consumer failures to detect zero throughput and data freshness issues?",
+    "doc_id": "pdf-streaming-kafka-12-0871d6",
+    "doc_title": "Kafka Consumer Fails Silently",
+    "component": "kafka"
+  },
+  {
+    "question": "How do I fix a Spark job timeout caused by massive key skew during final aggregation on the user_id key?",
+    "doc_id": "config-data-skew-few-large-partitions-1-32a28f",
+    "doc_title": "Late Stages Stalled Due to Massive Key Skew",
+    "component": "spark"
+  },
+  {
+    "question": "Why do dashboards still show stale values after a successful backfill and data validation?",
+    "doc_id": "pdf-backfills-reprocessing-8-ab3388",
+    "doc_title": "Downstream Cache Not",
+    "component": "backfill"
+  },
+  {
+    "question": "How do I fix incorrect downstream metrics in a streaming job caused by out-of-order messages during event-time aggregations?",
+    "doc_id": "pdf-streaming-kafka-10-000dbb",
+    "doc_title": "Out-of-Order Messages Break",
+    "component": "streaming"
+  },
+  {
+    "question": "How do I implement source-to-target count reconciliation to detect missing records in a daily ETL job?",
+    "doc_id": "pdf-data-quality-1-b92772",
+    "doc_title": "Missing Records in a Daily ETL",
+    "component": "data-quality"
+  },
+  {
+    "question": "How do I implement a data-readiness gating mechanism to handle late-arriving upstream data violating my two-hour SLA?",
+    "doc_id": "pdf-data-pipeline-failures-14-e2b445",
+    "doc_title": "Late-Arriving Data Breaks Daily",
+    "component": "spark"
+  },
+  {
+    "question": "How do I resolve Airflow DAG tasks stuck in a queued state due to insufficient worker capacity?",
+    "doc_id": "pdf-orchestration-scheduling-1-2ab53f",
+    "doc_title": "Airflow DAG Tasks Stuck in",
+    "component": "airflow"
+  },
+  {
+    "question": "How do I fix severe Spark cluster underutilization caused by a hardcoded spark.sql.shuffle.partitions=200 setting?",
+    "doc_id": "config-too-few-partitions-underutilized-cluster-1-63f8a1",
+    "doc_title": "Shuffle Bottleneck with Underutilized Cluster",
+    "component": "spark"
+  },
+  {
+    "question": "How do I fix incomplete daily aggregates caused by late-arriving source data in my ETL pipeline?",
+    "doc_id": "pdf-data-quality-7-e2b445",
+    "doc_title": "Late-Arriving Data Breaks Daily",
+    "component": "orchestration"
+  },
+  {
+    "question": "How do I fix a Spark job with severe data skew on a join key that causes one executor to overload and breach the SLA?",
+    "doc_id": "pdf-performance-latency-8-a15950",
+    "doc_title": "Skewed Join Causes Spark Job",
+    "component": "spark"
+  },
+  {
+    "question": "How do I resolve Airflow SLA breaches caused by resource contention between critical and lower-priority DAGs on a shared worker pool?",
+    "doc_id": "pdf-orchestration-scheduling-5-96c931",
+    "doc_title": "Resource Contention Between",
+    "component": "airflow"
+  },
+  {
+    "question": "Why does my PySpark job hit OOM errors on the second run due to un-cached intermediate DataFrames in a loop?",
+    "doc_id": "config-uncached-repeated-dataframe-reuse-1-cd0a56",
+    "doc_title": "Memory Pressure from Repeated Lazy DataFrame Evaluation",
+    "component": "spark"
+  },
+  {
+    "question": "How do I fix Kafka producer throttling that causes data lag and inaccurate metrics?",
+    "doc_id": "pdf-streaming-kafka-15-70aa21",
+    "doc_title": "Producer Throttling Causes",
+    "component": "kafka"
+  },
+  {
+    "question": "How do I resolve a Spark job slowdown from 1 to 3 hours on 2 TB tables by switching from an inefficient shuffle join to a broadcast join?",
+    "doc_id": "pdf-performance-latency-12-dc0724",
+    "doc_title": "Slow Join on Large Tables in",
+    "component": "spark"
+  },
+  {
+    "question": "How do I replace direct production database access with curated read-only views for analytical needs?",
+    "doc_id": "pdf-security-access-2-eb007e",
+    "doc_title": "Stakeholder Requests Direct",
+    "component": "security"
+  },
+  {
+    "question": "How do I implement dataset versioning to handle a last-minute scope change adding fields without breaking downstream consumers?",
+    "doc_id": "pdf-stakeholder-process-5-a507e5",
+    "doc_title": "Last-Minute Scope Change",
+    "component": "schema"
+  },
+  {
+    "question": "How do I implement windowed reprocessing in Spark to fix late-arriving T-2 data without recomputing full aggregates?",
+    "doc_id": "pdf-backfills-reprocessing-5-9f149d",
+    "doc_title": "Late-Arriving Data Requires",
+    "component": "spark"
+  },
+  {
+    "question": "How do I fix Airflow DAG execution delays caused by a UTC timezone misconfiguration when the team expects IST business hours?",
+    "doc_id": "pdf-orchestration-scheduling-3-9a8b88",
+    "doc_title": "Timezone Misconfiguration",
+    "component": "airflow"
+  },
+  {
+    "question": "How do I resolve cumulative consumer lag in Spark Structured Streaming caused by growing state store size and sink latency?",
+    "doc_id": "pdf-streaming-kafka-9-10ea0a",
+    "doc_title": "Spark Structured Streaming Lag",
+    "component": "spark"
+  },
+  {
+    "question": "How do I fix an Airflow DAG failing after an upgrade due to deprecated operators while meeting the 2-hour SLA?",
+    "doc_id": "pdf-orchestration-scheduling-7-c5e803",
+    "doc_title": "DAG Breaks After Airflow",
+    "component": "airflow"
+  },
+  {
+    "question": "How do I implement partition-level success validation and targeted reprocessing for a Spark job with partial failures?",
+    "doc_id": "pdf-data-pipeline-failures-4-e3a0db",
+    "doc_title": "Partial Job Success Causing Silent",
+    "component": "spark"
+  },
+  {
+    "question": "How do I resolve severe Kafka consumer lag spikes from 10k to 1.5M messages caused by downstream sink processing bottlenecks?",
+    "doc_id": "pdf-streaming-kafka-1-f4b577",
+    "doc_title": "Kafka Consumer Lag Spikes",
+    "component": "kafka"
+  },
+  {
+    "question": "How do I fix the Spark driver OutOfMemoryError during massive aggregation with GROUP BY columns?",
+    "doc_id": "config-insufficient-driver-memory-large-plan-2-6d6206",
+    "doc_title": "Driver OOM on Large Aggregation",
+    "component": "spark"
+  },
+  {
+    "question": "How do I resolve accidental PII exposure in application logs that are already being consumed by analytics tools?",
+    "doc_id": "pdf-security-access-3-aee231",
+    "doc_title": "Accidental Exposure of",
+    "component": "security"
+  },
+  {
+    "question": "How do I fix incorrect Spark streaming aggregation metrics caused by late-arriving messages without replaying data?",
+    "doc_id": "pdf-streaming-kafka-6-b437e3",
+    "doc_title": "Late-Arriving Messages Break",
+    "component": "spark"
+  },
+  {
+    "question": "How do I resolve Spark 'GC overhead limit exceeded' timeouts by tuning executor memory-to-core ratios and shuffle partitions?",
+    "doc_id": "config-gc-pressure-old-gen-2-1ee861",
+    "doc_title": "Long GC Pauses Causing Executor Timeouts",
+    "component": "spark"
+  },
+  {
+    "question": "How do I reduce unexpected ETL data transfer costs for large cross-region datasets while maintaining replication?",
+    "doc_id": "pdf-cloud-cost-resources-9-1d9037",
+    "doc_title": "Data Transfer Costs Balloon Due",
+    "component": "cloud-cost"
+  },
+  {
+    "question": "How do I fix Spark OOM errors during shuffle caused by too many cores per executor?",
+    "doc_id": "config-excessive-caching-memory-pressure-1-80a1d1",
+    "doc_title": "Memory Pressure During Shuffle Due to High Executor Core Count",
+    "component": "spark"
+  },
+  {
+    "question": "How do I prevent duplicate records in downstream tables after a manual ETL retry lacks idempotency and primary key enforcement?",
+    "doc_id": "pdf-backfills-reprocessing-2-171bf5",
+    "doc_title": "Duplicate Records After Job",
+    "component": "data-quality"
+  },
+  {
+    "question": "How do I fix 'Too many open files' errors in HDFS caused by Spark creating over 500,000 tiny output files?",
+    "doc_id": "config-small-files-problem-many-output-files-2-1520c9",
+    "doc_title": "Huge HDFS footprint caused by thousands of tiny output files",
+    "component": "spark"
+  },
+  {
+    "question": "How do I fix Spark shuffle fetch timeouts on large aggregations caused by excessive executor cores and insufficient memory?",
+    "doc_id": "config-network-timeout-large-shuffle-fetch-2-36d33d",
+    "doc_title": "Shuffle Fetch Timeout on Large Aggregation",
+    "component": "spark"
+  },
+  {
+    "question": "How do I reset Spark incremental checkpoints after historical reprocessing causes downstream job failures?",
+    "doc_id": "pdf-backfills-reprocessing-9-e8e5b8",
+    "doc_title": "Reprocessing Breaks",
+    "component": "spark"
+  },
+  {
+    "question": "How do I implement defensive ingestion with data validation to fix intermittent Spark batch job failures caused by malformed input?",
+    "doc_id": "pdf-data-pipeline-failures-2-4ded80",
+    "doc_title": "Intermittent Spark Job Failures",
+    "component": "spark"
+  },
+  {
+    "question": "How do I implement task-level retries with exponential backoff in Airflow to handle transient upstream API errors?",
+    "doc_id": "pdf-orchestration-scheduling-8-f139e4",
+    "doc_title": "Airflow DAG Fails Intermittently",
+    "component": "airflow"
+  },
+  {
+    "question": "How do I prevent downstream ETL failures when upstream dependencies run late and violate SLAs?",
+    "doc_id": "pdf-data-pipeline-failures-7-7d22e8",
+    "doc_title": "Upstream Data Delay Breaking",
+    "component": "orchestration"
+  },
+  {
+    "question": "How do I handle an unannounced third-party API schema change in my ETL job to meet the one-hour SLA?",
+    "doc_id": "pdf-data-pipeline-failures-8-3dae6b",
+    "doc_title": "Third-Party API Schema Change",
+    "component": "schema"
+  },
+  {
+    "question": "How do I safely cast an INT to STRING in my ETL pipeline to handle mixed historical and new data without breaking aggregations?",
+    "doc_id": "pdf-schema-evolution-4-65909f",
+    "doc_title": "Data Type Change Breaks",
+    "component": "schema"
+  },
+  {
+    "question": "How do I resolve S3 to warehouse data corruption detected during transfer without re-fetching the entire dataset?",
+    "doc_id": "pdf-data-quality-8-6716d2",
+    "doc_title": "Data Corruption During File",
+    "component": "data-quality"
+  },
+  {
+    "question": "Why does my Spark job crash with OutOfMemoryError after collecting a 45GB dataset to the driver node?",
+    "doc_id": "config-driver-oom-collect-heavy-1-aba3bc",
+    "doc_title": "Driver OOM due to Massive DataFrame Collection",
+    "component": "spark"
+  },
+  {
+    "question": "How do I fix slowly drifting daily metrics caused by cumulative errors in incremental aggregation logic?",
+    "doc_id": "pdf-data-quality-6-3a0502",
+    "doc_title": "Slowly Drifting Metrics Over",
+    "component": "data-quality"
+  },
+  {
+    "question": "How do I resolve repeated Spark streaming consumer crashes caused by a corrupted checkpoint state store?",
+    "doc_id": "pdf-streaming-kafka-8-836755",
+    "doc_title": "Consumer Crashes After",
+    "component": "spark"
+  },
+  {
+    "question": "How do I resolve a production Spark ETL failure caused by a code regression in a refactor affecting edge-case data?",
+    "doc_id": "pdf-data-pipeline-failures-12-a6c198",
+    "doc_title": "Production Failure After ETL",
+    "component": "spark"
+  },
+  {
+    "question": "Why did query performance degrade 5x after adding a column to a 1 TB table due to outdated indexes and sort keys?",
+    "doc_id": "pdf-performance-latency-6-ac9265",
+    "doc_title": "Query Performance Degrades",
+    "component": "schema"
+  },
+  {
+    "question": "Why is my Spark job underutilized with 15% CPU per executor despite using 16 cores and 16GB memory per executor?",
+    "doc_id": "config-too-few-partitions-underutilized-cluster-2-aad1ee",
+    "doc_title": "Shuffle Bottleneck with Oversized Executors",
+    "component": "spark"
+  },
+  {
+    "question": "How do I stop non-production staging clusters from breaching budget limits by running over weekends?",
+    "doc_id": "pdf-cloud-cost-resources-7-b4f04a",
+    "doc_title": "Idle Cloud Resources Left",
+    "component": "cloud-cost"
+  },
+  {
+    "question": "How do I handle a 1-hour SLA for revenue numbers when data validation checks are still running?",
+    "doc_id": "pdf-stakeholder-process-1-311cfb",
+    "doc_title": "Stakeholders Demand Data",
+    "component": "data-quality"
+  },
+  {
+    "question": "How do I fix Spark shuffle timeouts caused by CPU oversubscription when running 4 cores per executor on a 32-core cluster?",
+    "doc_id": "config-under-provisioned-cores-slow-parallelism-2-0ee70c",
+    "doc_title": "Slow Shuffle Due to Oversubscribed Executors",
+    "component": "spark"
+  },
+  {
+    "question": "My Spark job keeps failing with java.lang.OutOfMemoryError: Java heap space during the shuffle stage of a large groupBy aggregation. Here's my current spark-submit command: spark-submit --class com.mycompany.etl.DailyAggregationJob --master yarn --deploy-mode cluster --driver-memory 4g --executor-memory 4g --executor-cores 4 --num-executors 10 --conf spark.sql.shuffle.partitions=200 --conf spark.dynamicAllocation.enabled=false --conf spark.serializer=org.apache.spark.serializer.KryoSerializer s3://my-bucket/jobs/daily-aggregation.jar The job processes ~500GB of data with a wide join followed by a groupBy aggregation. It ran fine on smaller datasets but started failing consistently once we scaled up to this volume. Executors are dying with OOM around the shuffle-write stage. How should I fix the memory and partition configuration?",
+    "doc_title": "Out-of-Memory on Executors During Large Shuffle",
+    "component": "spark",
+    "doc_ids": [
+      "config-executor-oom-high-shuffle-1-57c884",
+      "config-executor-oom-high-shuffle-2-bd3fb3"
+    ]
+  },
+  {
+    "question": "My driver keeps crashing with OutOfMemoryError after calling .collect() on a large DataFrame. Current command: spark-submit --driver-memory 4g --executor-memory 8g --executor-cores 4 --num-executors 20 my_job.jar. The result set is larger than expected. What should I change?",
+    "doc_title": "Driver OOM due to Massive DataFrame Collection",
+    "component": "spark",
+    "doc_ids": [
+      "config-driver-oom-collect-heavy-1-aba3bc",
+      "config-driver-oom-collect-heavy-2-c1204c"
+    ]
+  },
+  {
+    "question": "I'm seeing heavy data skew — one task in my shuffle stage takes 45 minutes while the other 199 finish in under 2 minutes. My config is --executor-memory 8g --executor-cores 4 --num-executors 15 --conf spark.sql.shuffle.partitions=200. How do I fix this?",
+    "doc_title": "Late Stages Stalled Due to Massive Key Skew",
+    "component": "spark",
+    "doc_ids": [
+      "config-data-skew-few-large-partitions-1-32a28f",
+      "config-data-skew-few-large-partitions-2-9ec1bb"
+    ]
+  },
+  {
+    "question": "My job produces thousands of tiny output files (a few KB each) after a write to S3, and downstream jobs reading this data are slow. Current config uses 500 shuffle partitions on a 2GB dataset. How should I reduce the small-files problem?",
+    "doc_title": "Excessive Small Files Causing NameNode Pressure and Slow Writes",
+    "component": "spark",
+    "doc_ids": [
+      "config-small-files-problem-many-output-files-1-f695cf",
+      "config-small-files-problem-many-output-files-2-1520c9"
+    ]
+  },
+  {
+    "question": "My job has too few partitions — only 4 tasks are running even though I have --num-executors 20 --executor-cores 4 (80 total cores available). What config change fixes the underutilization?",
+    "doc_title": "Shuffle Bottleneck with Underutilized Cluster",
+    "component": "spark",
+    "doc_ids": [
+      "config-too-few-partitions-underutilized-cluster-1-63f8a1",
+      "config-too-few-partitions-underutilized-cluster-2-aad1ee"
+    ]
+  },
+  {
+    "question": "I'm seeing my job spill heavily to disk during shuffle, with ShuffleWriteMetrics showing large 'bytes spilled.' Current config: --executor-memory 4g --executor-cores 8. What should I adjust?",
+    "doc_title": "Shuffle Spill to Disk Caused by Oversubscribed Executor Cores",
+    "component": "spark",
+    "doc_ids": [
+      "config-shuffle-spill-to-disk-1-1cf3ba",
+      "config-shuffle-spill-to-disk-2-6690c6"
+    ]
+  },
+  {
+    "question": "My broadcast join is timing out with 'Could not execute broadcast in 300 secs'. The smaller table is around 900MB. Current config uses default spark.sql.autoBroadcastJoinThreshold. How do I fix this?",
+    "doc_title": "Broadcast Join Fails with OOM on Large Broadcast Table",
+    "component": "spark",
+    "doc_ids": [
+      "config-slow-broadcast-join-large-table-1-c8b40d",
+      "config-slow-broadcast-join-large-table-2-b16533"
+    ]
+  },
+  {
+    "question": "I have a small lookup table (under 50MB) being joined with a huge fact table via a regular sort-merge join, and it's slow. How do I force Spark to use a broadcast join instead?",
+    "doc_title": "Broadcast Hash Join Fallback to Shuffle Due to Missing Hint",
+    "component": "spark",
+    "doc_ids": [
+      "config-missing-broadcast-hint-small-table-1-4bf799",
+      "config-missing-broadcast-hint-small-table-2-db13cc"
+    ]
+  },
+  {
+    "question": "My job with spark.dynamicAllocation.enabled=true keeps adding and removing executors rapidly, causing instability. What settings control this thrashing?",
+    "doc_title": "Executor Thrashing Due to Aggressive Dynamic Allocation",
+    "component": "spark",
+    "doc_ids": [
+      "config-dynamic-allocation-thrashing-1-693c46",
+      "config-dynamic-allocation-thrashing-2-693c46"
+    ]
+  },
+  {
+    "question": "I'm seeing frequent full GC pauses (several seconds each) on my executors under heavy load. Current config: --executor-memory 16g --executor-cores 8. How do I reduce GC pressure?",
+    "doc_title": "Frequent Full GC Pauses in Shiny Data Load",
+    "component": "spark",
+    "doc_ids": [
+      "config-gc-pressure-old-gen-1-5e16b1",
+      "config-gc-pressure-old-gen-2-1ee861"
+    ]
+  },
+  {
+    "question": "My job caches a DataFrame with .cache() but I'm running low on executor memory and seeing evictions. How should I tune caching vs execution memory?",
+    "doc_title": "Memory Pressure During Shuffle Due to High Executor Core Count",
+    "component": "spark",
+    "doc_ids": [
+      "config-excessive-caching-memory-pressure-1-80a1d1",
+      "config-excessive-caching-memory-pressure-2-1ad69d"
+    ]
+  },
+  {
+    "question": "I'm re-computing the same DataFrame transformation multiple times across my pipeline without caching it, and it's slow. What's the right way to persist it?",
+    "doc_title": "Memory Pressure from Repeated Lazy DataFrame Evaluation",
+    "component": "spark",
+    "doc_ids": [
+      "config-uncached-repeated-dataframe-reuse-1-cd0a56",
+      "config-uncached-repeated-dataframe-reuse-2-9d01d1"
+    ]
+  },
+  {
+    "question": "My wide transformation (multiple joins + groupBy) is causing an explosion in shuffle data volume. How do I restructure the query or config to reduce shuffle size?",
+    "doc_title": "Aggregation Job Stalling Due to Small Shuffle Partitions",
+    "component": "spark",
+    "doc_ids": [
+      "config-wide-transformation-shuffle-explosion-1-5b23a3",
+      "config-wide-transformation-shuffle-explosion-2-bdc498"
+    ]
+  },
+  {
+    "question": "My job uses .checkpoint() on a DataFrame with a very long lineage, and checkpointing itself is taking a long time. What's the tradeoff here and how should I tune it?",
+    "doc_title": "Checkpoint Overhead in Long-Lineage DAG",
+    "component": "spark",
+    "doc_ids": [
+      "config-checkpoint-overhead-long-lineage-1-7bbeab",
+      "config-checkpoint-overhead-long-lineage-2-8ff2cf"
+    ]
+  },
+  {
+    "question": "I'm getting FetchFailedException: Failed to connect errors during a large shuffle fetch between executors. What network/timeout settings should I adjust?",
+    "doc_title": "Shuffle Fetch Timeout During Large Aggregation",
+    "component": "spark",
+    "doc_ids": [
+      "config-network-timeout-large-shuffle-fetch-1-97ef42",
+      "config-network-timeout-large-shuffle-fetch-2-36d33d"
+    ]
+  },
+  {
+    "question": "My executors are being killed by YARN with 'Container killed by YARN for exceeding memory limits', even though --executor-memory looks sufficient. What's missing from my config?",
+    "doc_title": "Out of Memory on Executors Causing Yarn Container Termination",
+    "component": "spark",
+    "doc_ids": [
+      "config-executor-loss-yarn-container-killed-1-7bbaac",
+      "config-executor-loss-yarn-container-killed-2-094215"
+    ]
+  },
+  {
+    "question": "My groupBy on a skewed key (one key has 80% of the rows) is creating one massive task. How do I handle this specific skew pattern?",
+    "doc_title": "Skewed Join Causing Executor Stall and OOM",
+    "component": "spark",
+    "doc_ids": [
+      "config-skewed-join-key-distribution-1-4dfb3c",
+      "config-skewed-join-key-distribution-2-b01c51"
+    ]
+  },
+  {
+    "question": "My job's driver needs a lot of memory to plan a complex query with many joins, and I'm seeing driver OOM before any executor work starts. What driver-side settings help?",
+    "doc_title": "Driver OOM on Large Aggregation",
+    "component": "spark",
+    "doc_ids": [
+      "config-insufficient-driver-memory-large-plan-1-6d6206",
+      "config-insufficient-driver-memory-large-plan-2-6d6206"
+    ]
+  },
+  {
+    "question": "I have idle executors sitting around doing nothing most of the time, wasting cluster resources. Current config: --num-executors 50 --executor-cores 2 --executor-memory 4g. How do I right-size this?",
+    "doc_title": "Idle Cluster with Oversized Executor Memory",
+    "component": "spark",
+    "doc_ids": [
+      "config-over-provisioned-executors-idle-cluster-1-e4ad24",
+      "config-over-provisioned-executors-idle-cluster-2-844cd3"
+    ]
+  },
+  {
+    "question": "My job is slow because parallelism is too low relative to available cores — only using --executor-cores 1 --num-executors 5 on a large cluster. What should I change?",
+    "doc_title": "High CPU Saturation with Low Parallelism",
+    "component": "spark",
+    "doc_ids": [
+      "config-under-provisioned-cores-slow-parallelism-1-8f615d",
+      "config-under-provisioned-cores-slow-parallelism-2-0ee70c"
+    ]
+  },
+  {
+    "question": "I haven't enabled off-heap memory and I'm seeing heap exhaustion during heavy shuffle. How do I configure off-heap memory correctly?",
+    "doc_title": "Out-of-Memory (OOM) Errors Despite Sufficient Heap Allocation",
+    "component": "spark",
+    "doc_ids": [
+      "config-off-heap-memory-not-configured-1-0623b0",
+      "config-off-heap-memory-not-configured-2-37cb5a"
+    ]
+  },
+  {
+    "question": "I forgot to enable Kryo serialization and I suspect serialization overhead is slowing down my job. How do I enable it and what else should I check?",
+    "doc_title": "Slow Job Due to Default Java Serialization Overhead",
+    "component": "spark",
+    "doc_ids": [
+      "config-kryo-serialization-not-enabled-1-c39169",
+      "config-kryo-serialization-not-enabled-2-95d5a0"
+    ]
+  },
+  {
+    "question": "My job doesn't have Adaptive Query Execution (AQE) enabled and I'm seeing poor join strategy choices and static partition counts. How do I turn AQE on and what does it help with?",
+    "doc_title": "Catalyst Optimizer Skips Adaptive Joins on Large Broadcasts",
+    "component": "spark",
+    "doc_ids": [
+      "config-adaptive-query-execution-disabled-1-feb1d1",
+      "config-adaptive-query-execution-disabled-2-432b47"
+    ]
+  }
+]
