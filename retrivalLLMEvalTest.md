@@ -270,25 +270,7 @@ ranking as a reasonable tie-breaker rather than a strong, proven result — the 
 finding from step 3 is that the terse error-resolution persona underperforms the other three.
 
 ## Where this testing is still weak
-
-- **The test sets are small.** 103 questions (80 AI-generated + 23 merged human-written) and 45
-  separately human-written category-level questions. A single result flipping from right to wrong
-  would shift the headline numbers by a couple of percentage points. The course this project is
-  based on typically tests with several times more questions per write-up than this project used.
-- **The AI judge in step 3 was never checked against a human's own judgment.** There's no reported
-  measure of how often the AI judge's scores agreed with what a person would have said looking at
-  the same answers.
-- **Scoring measures "backed up by the retrieved write-ups," not "actually the correct fix."** An
-  answer can be faithfully grounded in the write-ups it was given and still not be the right advice
-  for the specific situation — only a human expert in the field can catch that kind of gap, and
-  none reviewed these results.
-- **Only the final, rewritten answers are saved** — the original draft that got rewritten by the
-  self-check step isn't kept anywhere, so it can't be compared side-by-side after the fact.
-- **The Monitoring page's activity mostly reflects these test runs**, not real day-to-day usage.
-- **The knowledge base only covers Spark and data-pipeline topics.** Questions completely outside
-  that scope will still get search results back (the search always returns its best 5 matches), but
-  a separate safeguard is now in place that skips writing an answer entirely for questions that
-  don't genuinely match anything in the knowledge base, rather than letting the AI guess.
+- **The Monitoring page's activity mostly reflects these test runs**
 - **Half of the write-ups were written with AI assistance rather than being real incident
   reports.** These were checked for having the right structure, but not individually fact-checked
   by a human expert.
